@@ -60,9 +60,10 @@ class HomeScreen extends StatelessWidget {
               Container(
                 width: 600,
                 child: Text(
-                  'Professional with 4+ years of experience in mobile app development using Java, Kotlin, and Flutter. Skilled in requirement gathering, design, implementation, and bug fixing.',
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.labelSmall,
+                  'I am an experienced Android App Developer with 5 years of expertise in mobile app development using Java, Kotlin, and Android SDK, along with 1.5 years of experience in Flutter and Dart hybrid app development. Specializing in building scalable, maintainable, and user-friendly applications, I have a deep understanding of Android architecture patterns like MVC, MVP, and MVVM. | Education: B.Tech in Computer Science and Engineering (2015 - 2019) from Dr. A.P.J Abdul Kalam Technical University, India | Core Java training from Ducat Noida | Android Development training from Stucorner Training and Development | Kotlin Masterclass Programming Course: Android Coding Bible from Udemy | Android & Firebase ML Kit in Java/Kotlin from Udemy | Dart Simplified: Beginners Guide from Udemy | Learn SQLite Database in Android from Udemy | Experience: Expertise in Java, Kotlin, Dart, Node.js, Android SDK, Flutter SDK, REST APIs, SOAP APIs, RxJava, Retrofit, Volley, Firebase | Storage: SQLite, Realm, Room Database, Datastore | UI/UX: Material Design Components, Android Jetpack Components (ViewModel, LiveData, Navigation, Coroutines) | Tools: Git, GitHub, Dagger, Hilt | Mapping: Google Maps SDK, ArcGIS Map and Service Integration | Payment Integration: PayU Money, Razorpay | Security: Proguard rule, SSL pinning | Testing: Unit Testing, UI Testing using Junit, Espresso | Collaborated with cross-functional teams, handled API integration, bug fixes, and improved application performance to ensure a seamless user experience.',
+                  textAlign: TextAlign.start,
+                  style: Theme.of(context).textTheme.titleSmall,
+
                 ),
               ),
 
@@ -105,7 +106,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class SocialIcon extends StatelessWidget {
+ class SocialIcon extends StatelessWidget {
   final IconData icon;
   final VoidCallback onPressed;
   final Color color;

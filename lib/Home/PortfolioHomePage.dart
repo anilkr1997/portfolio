@@ -90,8 +90,10 @@ class _PortfolioHomePageState extends State<PortfolioHomePage> {
         },
         type: BottomNavigationBarType.fixed,
         backgroundColor: Theme.of(context).primaryColor,
-        selectedItemColor: Theme.of(context).secondaryHeaderColor,
-        unselectedItemColor: Colors.white70,
+        selectedIconTheme: const IconThemeData(color: Colors.white),
+        unselectedIconTheme: const IconThemeData(color: Colors.white70),
+        selectedItemColor: Colors.white,
+        unselectedItemColor:Colors.white70,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.work), label: 'Projects'),
