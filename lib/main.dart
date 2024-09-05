@@ -13,12 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+debugShowCheckedModeBanner: false,
       title: 'Anil Kumar Maurya',
       theme: ThemeData(
         primaryColor: const Color(0xFF1E88E5),
-        hintColor: const Color(0xFFFFC107),
+        primaryColorLight: const Color(0xFFFFC107),
+        hintColor: Colors.grey,
         fontFamily: 'Roboto',
+
         textTheme: const TextTheme(
           headlineMedium: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Color(0xFF1E88E5)),
           titleLarge: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Color(0xFF1E88E5)),

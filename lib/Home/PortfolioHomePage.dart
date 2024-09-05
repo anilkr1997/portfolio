@@ -1,8 +1,11 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/Home/ProjectsScreen.dart';
 
 import 'ContactScreen.dart';
+import 'ExperienceScreen.dart';
 import 'HomeScreen.dart';
 import 'SkillsScreen.dart';
 
@@ -17,13 +20,21 @@ class _PortfolioHomePageState extends State<PortfolioHomePage> {
     HomeScreen(),
     ProjectsScreen(),
     SkillsScreen(),
+    ExperienceScreen(),
     ContactScreen(),
+  ];
+  final List<String> _titles = [
+  'MrAppbuilder',
+  'Projects',
+  'Skills',
+  'Experience',
+  'Contact',
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("Portfolio",style: TextStyle(color: Colors.black,fontStyle: FontStyle.normal)),
+        appBar: AppBar(title:  Text(_titles[_selectedIndex],style: const TextStyle(color: Colors.white,fontStyle: FontStyle.normal)),
         backgroundColor: Theme.of(context).primaryColorDark),
       body: Row(
         children: [
@@ -55,6 +66,10 @@ class _PortfolioHomePageState extends State<PortfolioHomePage> {
                   label: Text('Skills'),
                 ),
                 NavigationRailDestination(
+                  icon: Icon(Icons.business),
+                  label: Text('Experience'),
+                ),
+                NavigationRailDestination(
                   icon: Icon(Icons.contact_mail),
                   label: Text('Contact'),
                 ),
@@ -81,6 +96,7 @@ class _PortfolioHomePageState extends State<PortfolioHomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.work), label: 'Projects'),
           BottomNavigationBarItem(icon: Icon(Icons.build), label: 'Skills'),
+          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Experience'),
           BottomNavigationBarItem(icon: Icon(Icons.contact_mail), label: 'Contact'),
         ],
       )

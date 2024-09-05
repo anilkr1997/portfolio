@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                     onPressed: () => _launchURL(socialLinks['medium']!),
                   ),
                   SocialIcon(
-                    color: Theme.of(context).primaryColor,
+                    color: Colors.blue,
                     icon: FontAwesomeIcons.linkedin,
                     onPressed: () => _launchURL(socialLinks['linkedin']!),
                   ),
